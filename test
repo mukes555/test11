@@ -1,0 +1,39 @@
+ <com.siyatech.writeit.utills.SwipeDisabledViewPager
+            android:id="@+id/vp_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomTtsSmallPlayer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/bottomTtsSmallPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_above="@+id/bottomNavLay"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="#ffffff"
+            android:layout_marginRight="@dimen/dp10"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/line2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/acv"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="@dimen/dp2"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/tts_userImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_for_bottom_tts_player"
+                    android:contentDescription="@string/noll"
+                    android:src="@drawable/ic_profile_place_holder" />
+            </androidx.cardview.widget.CardView>
